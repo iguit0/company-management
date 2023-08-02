@@ -1,0 +1,15 @@
+
+@base_url=http://localhost:5000
+
+###
+# @name create
+POST {{base_url}}/companies
+Content-Type: application/json
+
+{"cnae": "123456", "cnpj": "75404553000109", "company_name": "Empresa Modelo LTDA", "trading_name": "Modelo"}
+
+###
+# @name list
+GET {{base_url}}/companies
+Content-Type: application/json
+
