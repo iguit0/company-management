@@ -27,11 +27,11 @@ In order to clone the repository to your local machine, follow these steps:
 3. Execute the following command:
 
 ```shell
-    git clone https://github.com/iguit0/silver-eureka.git
+    git clone https://github.com/iguit0/company-management.git
 ```
 
 ```bash
-    cd silver-eureka
+    cd company-management
 ```
 
 ## 💻 Installation
