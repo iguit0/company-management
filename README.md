@@ -4,7 +4,7 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-This monorepository contains both the backend and frontend components of our application, which provides a single, unified codebase for more efficient development and collaboration.
+This monorepository contains both the backend and frontend (**soon...**) components of our application, which provides a single, unified codebase for more efficient development and collaboration.
 
 ## 📌 Table of Contents
 
@@ -39,8 +39,6 @@ In order to clone the repository to your local machine, follow these steps:
 Once you have cloned the repository, you may need to install the project's dependencies. Follow the instructions below to set up the backend and frontend components.
 
 - [Backend instructions](./backend/README.md)
-
-<!-- - [Frontend instructions](./frontend/README.md) -->
 
 ## 🤝 Contributing
 
