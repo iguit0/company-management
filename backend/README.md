@@ -70,4 +70,7 @@ You can use Postman, Insomnia or whatever REST Client you want.
 
 I use a [REST Client extension](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) built in VSCode. Easy to use. Check [collection.rest](/backend/collection.rest).
 
+## Database
+
+The "database" is located in [backend/app/data/companies.json](/backend/app/data/companies.json)
 
