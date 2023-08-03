@@ -33,3 +33,14 @@ class CompanySchema(Schema):
             raise ValidationError("CNAE deve ser um numero.")
         if len(value) not in (4, 6):
             raise ValidationError("CNAE deve conter 4 ou 6 digitos.")
+
+
+class CompanyUpdateSchema(CompanySchema):
+    cnpj = fields.String(
+        required=False,
+        metadata={"description": "CNPJ"},
+    )
+
+    @validates("cnpj")
+    def validate_cnpj(self, _):
+        raise ValidationError("O CNPJ nao pode ser atualizado.")

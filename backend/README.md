@@ -2,7 +2,7 @@
 
 A lightweight RESTful service for managing company's data.
 
-### Technologies
+## Technologies
 
 - [Python 3.11](https://www.python.org/)
 - [Flask](https://flask.palletsprojects.com/en/2.3.x/)
@@ -18,7 +18,7 @@ A lightweight RESTful service for managing company's data.
 - [ ] Documentation
 - [ ] Unit Testing with Pytest
 
-### Configuration
+## Configuration
 
 1. Create a virtual environment
 
@@ -32,19 +32,13 @@ A lightweight RESTful service for managing company's data.
     source venv/bin/activate
 ```
 
-3. Configure env file
-
-```shell
-    make load-env
-```
-
-4. Install dependencies
+3. Install dependencies
 
 ```shell
     make requirements-dev 
 ```
 
-### Linting
+## Linting
 
 Run lint and type checkers to reformat files before commit
 
@@ -52,11 +46,28 @@ Run lint and type checkers to reformat files before commit
     make lint
 ```
 
-### Running
+## Running
+
+(Recommended) Using docker:
+```shell
+    docker-compose up
+```
+
+Or if you prefer to supress logs:
+```shell
+    docker-compose up -d
+```
+
+Or you can run in standalone:
 
 ```shell
     make run-dev
 ```
 
-To open documentation navigate to http://localhost:8000/docs
+PS: You should be in the virtual env that you created in first steps.
+
+You can use Postman, Insomnia or whatever REST Client you want.
+
+I use a [REST Client extension](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) built in VSCode. Easy to use. Check [collection.rest](/backend/collection.rest).
+
 

@@ -13,6 +13,10 @@ requirements-dev:
 	pip install wheel
 	pip install -r requirements.txt
 
+.PHONY: run-dev
+run-dev:
+	python main.py
+
 # Lint Check
 
 bandit-check:

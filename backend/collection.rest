@@ -1,5 +1,9 @@
-
 @base_url=http://localhost:5000
+
+###
+# @name list
+GET {{base_url}}/companies
+Content-Type: application/json
 
 ###
 # @name create
@@ -9,7 +13,16 @@ Content-Type: application/json
 {"cnae": "123456", "cnpj": "75404553000109", "company_name": "Empresa Modelo LTDA", "trading_name": "Modelo"}
 
 ###
-# @name list
-GET {{base_url}}/companies
+# @name update
+@cnpj=75404553000109
+PUT {{base_url}}/companies/{{cnpj}}
 Content-Type: application/json
 
+{"cnae": "111111", "company_name": "COCA-COLA COMPANY CO.", "trading_name": "COCA-COLA REFRESCOS"}
+
+
+###
+# @name delete
+@cnpj=75404553000109
+DELETE {{base_url}}/companies/{{cnpj}}
+Content-Type: application/json
